@@ -9,6 +9,8 @@ FPS = 20.0
 # Detection Settings
 MOTION_THRESHOLD = 500  # Contours area threshold
 AI_DETECTION_CONFIDENCE = 0.5
+YOLO_MODEL = 'yolov8n.pt'  # nano model (fastest)
+TARGET_CLASSES = ['person', 'dog', 'cat', 'car', 'motorcycle', 'bird'] # Classes to track
 
 # Recording Settings
 RECORDINGS_PATH = 'recordings'
