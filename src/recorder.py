@@ -1,10 +1,13 @@
-import cv2
 import os
-import time
 from datetime import datetime
 
+import cv2
+
+
 class VideoRecorder:
-    def __init__(self, output_path='recordings', fps=20.0, resolution=(640, 480), codec='mp4v'):
+    def __init__(
+        self, output_path="recordings", fps=20.0, resolution=(640, 480), codec="mp4v"
+    ):
         self.output_path = output_path
         self.fps = fps
         self.resolution = resolution
@@ -20,7 +23,9 @@ class VideoRecorder:
         if not self.is_recording:
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
             self.filename = os.path.join(self.output_path, f"record_{timestamp}.mp4")
-            self.out = cv2.VideoWriter(self.filename, self.fourcc, self.fps, self.resolution)
+            self.out = cv2.VideoWriter(
+                self.filename, self.fourcc, self.fps, self.resolution
+            )
             self.is_recording = True
             print(f"Recording started: {self.filename}")
 

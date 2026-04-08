@@ -2,3 +2,5 @@ opencv-python
 mediapipe
 numpy
 ultralytics
+streamlit
+face_recognition
