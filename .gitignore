@@ -1,5 +1,19 @@
 
 
+# Project Specific
+recordings/
+*.mp4
+*.jpg
+*.jpeg
+*.png
+yolov8n.pt
+
+# Python Caches
+__pycache__/
+*.pyc
+venv/
+.venv/
+
 # Environment & Secrets (AIOX)
 .env
 .env.local
